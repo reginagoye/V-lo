@@ -531,6 +531,10 @@ p{
     padding-left: 0%;
     /* flex-grow: 2; */
 }
+#imagen:hover{
+    transform: rotateY(360deg);
+    transition: all 2s;
+}
 #form legend{
     font-size: larger;
     font-weight: bolder;
@@ -571,14 +575,16 @@ p{
     padding: 20px;
 }
 .reservar img:hover{
-    transform: scale(1.15);
-    transition: all 0.8s;
+    /* transform: scale(1.5); */
+    transform: skewx(-10deg);
+    transition: all 1.5s;
 }
 @media only screen and (max-width: 320px) {
     .reservar img{
         width: 300px;
         height: auto;
         display: none;
+        border-radius: 10%;
     }}
 #reservarBici{
     display: flex;
@@ -617,6 +623,16 @@ p{
     padding: 2%;
     min-width: 400px;
     border-radius: 10%;
+}
+#imageWalkingTourImg{
+    padding: 2%;
+    padding-left: 5%;
+    min-width: 400px;
+    border-radius: 10%;
+}
+#imageWalkingTourImg:hover{
+    transform: rotateY(360deg);
+    transition: all 2s;
 }
 #reservarBot{
     font-family: 'Montserrat', sans-serif;
