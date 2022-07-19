@@ -329,7 +329,7 @@ section{
 .item1{
     /* grid-column: 1/2; */
     /* grid-row: 1/2; */
-    background-image: url(/multimedia/bici/AdobeStock_169710635_Preview.jpeg);
+    background-image: url(./multimedia/bici/AdobeStock_169710635_Preview.jpeg);
     background-size: cover;
     background-position: center;
 }
