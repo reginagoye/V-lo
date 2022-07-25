@@ -138,41 +138,40 @@ body{
     background-color: rgb(176, 176, 176);
     width: 100%;
 }
-.header{
-    height: 10%px;
-    width: 100%;
+header{
+    /* height: 10%px; */
+    /* width: 100%; */
     background-color: rgb(192, 205, 50);
-    display: flex;
-    flex-direction:row;
-    justify-content: space-around;
+    /* display: flex; */
+    /* flex-direction:row; */
+    /* justify-content: space-around; */
 }
 .logo{
-    float: left;
+    /* float: left; */
     color: grey;
-    font-size: 28px;
+    font-size: 35px;
     font-family: 'Montserrat', sans-serif;
-    padding: 2%;
-    display: flex;
-    flex-direction: row;
+    /* padding: 2%; */
+    /* display: flex; */
+    /* flex-direction: row; */
 }
 .logo span{
     color: black;
-    padding-left: 2%;
 }
 .barra{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
+    /* width: 100%; */
+    /* height: auto; */
+    /* display: flex; */
+    /* flex-direction: row; */
     font-family: 'Montserrat', sans-serif;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 .barra ul{
     list-style: none;
-    padding: 2%;
-    padding-left: 25%;
-    width: 100%;
-    justify-content: space-evenly;
+    /* padding-left: 2%; */
+    /* padding-left: 25%;
+    width: 100%; */
+    /* justify-content: space-evenly; */
 }
 .barra ul li{
     display: inline-block;
@@ -180,8 +179,8 @@ body{
 }
 .barra ul li a{
     text-decoration: none;
-    padding-left: 25%;
-    padding: 2%;
+    /* padding-left: 25%;
+    padding: 2%; */
     font-size: 25px;
     color: gray;
 }
@@ -196,13 +195,13 @@ main{
     height: 450px;
 }
 .presentacion{
-    /* margin: 5px; */
+    margin: 5px;
     padding: 2%;
-    width: 100%;
-    height: auto;
-    display: inline-flex;
-    flex-flow:row wrap;
-    justify-content: space-evenly;
+    /* width: 100%; */
+    /* height: auto; */
+    /* display: inline-flex; */
+    /* flex-flow:row wrap; */
+    /* justify-content: space-evenly; */
     /* align-items: center; */
 }    
 .presentacion div{
@@ -212,15 +211,16 @@ main{
     /* width: 50%; */
     margin: 2px;
 }
-.intro{
-    width: 70%;
-    grid-area: textoVelo;
-    padding: 2%;
-}
-.presentacion video{
+/* .intro{ */
+    /* width: 70%; */
+    /* grid-area: textoVelo; */
+    /* padding: 2%; */
+/* } */
+.video{
+    margin-top: 1%;
     /* float: left; */
     /* text-size-adjust: 40%; */
-    grid-area: video;
+    /* grid-area: video; */
 }
 #verMas{
     height: auto;
@@ -249,6 +249,8 @@ main{
     color: grey;
 }
 #call{
+    position: relative;
+    top: 20px;
     box-sizing: border-box;
     color: grey;
     width: 250px;
@@ -256,7 +258,7 @@ main{
     background-color: rgba(0, 0, 0, 0.804);
     padding: 20px;
     font-family: 'Montserrat', sans-serif;
-    padding-top:  70px;
+    /* padding-top:  70px; */
     margin-left: 45px;
     border: 2px solid yellowgreen;
 }
@@ -293,6 +295,14 @@ h2{
     text-align: center;
     color: grey;
     padding: 10px;
+}
+h4{
+    background-color: rgba(0, 0, 0, 0.726);
+    font-family: 'Montserrat', sans-serif;
+    font-size:25px;
+    text-transform: capitalize;
+    color: rgba(192, 205, 50, 0.881);
+    padding: 15px;
 }
 section{
     background-color: rgb(176, 176, 176);
@@ -381,7 +391,7 @@ section{
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
-    padding: 1%;
+    padding: 5%;
     align-items: center;
     justify-content: space-around;
 }
@@ -466,17 +476,28 @@ footer i{
     color: grey;
     letter-spacing: 15px;
 }
-#inicio{
+.inicio{
     color: grey;
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     border: 3px solid grey;
+    margin-left: 1%;
+}
+.inicio:hover{
+    color: yellowgreen;
+    background-color: black;
 }
 #nosotros-img{
-    padding: 15px;
-    z-index: 1;
-    justify-content: center;
+    width: 80%;
+    height: auto;
+    padding: 10%px;
+    padding-left: 15%;
+}
+#nosotros{
+    /* min-width: 300px; */
+    background-color: beige;
+    padding: 5%;
 }
 p{
     font-family: 'Montserrat', sans-serif;
@@ -487,7 +508,7 @@ p{
     color: yellowgreen;
     padding: 2%;
     font-family: 'Montserrat', sans-serif;
-    width: 300px;
+    /* width: 300px; */
 }
 #formu legend{
     font-weight: bolder;
@@ -495,6 +516,10 @@ p{
     font-weight: bolder;
     color: yellowgreen;
     margin-bottom: 5%;
+}
+#formu select{
+    background-color: rgba(0, 0, 0, 0.128);
+    color: yellowgreen;
 }
 #formu input{
     background-color: rgba(189, 187, 187, 0.087);
@@ -509,8 +534,9 @@ p{
 }
 #formu textarea{
     background-color: rgba(201, 201, 201, 0.176);
+    color: yellowgreen;
 }
-.login{
+#login{
     background-color: rgba(128, 128, 128, 0.139);
     width: 100%;
     height: auto;
@@ -592,7 +618,6 @@ p{
     justify-content:space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    /* padding-top: 0.5%; */
 }
 #reservarBici img{
     padding: 2%;
@@ -647,6 +672,10 @@ p{
     bottom: 5%;
     left: 10%;
 }
+#reservarBot:hover{
+    background-color: yellowgreen;
+    color: black;
+}
 .subir{
     height: 50px;
     width: 50px;
@@ -660,5 +689,8 @@ p{
     color: grey;
     border: 3px solid grey;
     border-radius: 30%;
+}
+nav li a:hover{
+    color:rgb(0, 0, 0)
 }
 
