@@ -410,53 +410,85 @@ section{
     text-align: justify;
     width: 300px;
 }
-.walking{
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-areas: 
-        "imagen texto1 texto1"
-        "imagen ubicacion ubicacion"
-        "imagen ubicacion ubicacion"
-        "imagen ubicacion ubicacion"
-        "imagen texto2 texto2";
-    align-items: center;
-}
-#imageWalkingTour{
-    padding: 1%;
-    padding-left: 2%;
-    width: 100%;
-    height: auto;
-    grid-area: imagen;
-}
-#walkingTour-texto{
-    font-size: 15px;
-    text-align: center;
-}
-#walkingTour-texto p{
-    font-size: 15px;
-}
-#texto1{
-    grid-area: texto1;
-    padding: 1%;
-    padding-top: 1%;
-    text-align: justify;
-    height: auto;
-}
-#texto2{
-    grid-area: texto2;
-    padding: 1%;
-    padding-top: 1%;
-    text-align: justify;
-    height: auto;
-}
-#walkingTour-texto iframe{
-    width: auto;
-    height: 60%;
-    grid-area: ubicacion;
-    /* padding: 1%; */
-    padding-left: 10%;
-}
+@media only screen and (min-width: 1024px){
+    .walking{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-areas: 
+            "imagen texto1 texto1"
+            "imagen ubicacion ubicacion"
+            "imagen ubicacion ubicacion"
+            "imagen ubicacion ubicacion"
+            "imagen texto2 texto2";
+        align-items: center;
+    }
+    #imageWalkingTour{
+        padding: 1%;
+        /* padding-left: 1%; */
+        min-width: 200px;
+        height: auto;
+        grid-area: imagen;
+    }
+    #walkingTour-texto{
+        font-size: 15px;
+        text-align: center;
+    }
+    #walkingTour-texto p{
+        font-size: 15px;
+    }
+    #texto1{
+        grid-area: texto1;
+        padding: 1%;
+        padding-top: 1%;
+        text-align: justify;
+        height: auto;
+    }
+    #texto2{
+        grid-area: texto2;
+        padding: 1%;
+        padding-top: 1%;
+        text-align: justify;
+        height: auto;
+    }
+    #walkingTour-texto iframe{
+        width: auto;
+        height: 60%;
+        grid-area: ubicacion;
+        /* padding: 1%; */
+        padding-left: 10%;
+    }}
+
+@media only screen and (min-width: 400px) and (max-width: 599px){
+    .walking{
+        width: 100%;
+        height: 1500px;
+        display: grid;
+        grid-template-columns: 1, 1fr;
+        height: auto;
+    }
+    .imageWalkingTour{
+        width: 300px;
+        height: auto;
+    }
+    .walkingTour-texto iframe{
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        width: 300px;
+    }
+    .texto1{
+        width: 300px;
+        background-size: cover;
+        background-position: center;
+        justify-self:flex-en;
+    }
+    .texto2{
+        width: 300px;
+        background-size: cover;
+        background-position: center;
+    }}
+
 footer{
     background-color: rgb(192, 205, 50);
     min-height: 50px;
