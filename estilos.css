@@ -158,26 +158,25 @@ header{
 .logo span{
     color: black;
 }
-.barra{
+#barra{
     /* width: 100%; */
     /* height: auto; */
     /* display: flex; */
-    /* flex-direction: row; */
     font-family: 'Montserrat', sans-serif;
     /* justify-content: space-around; */
 }
-.barra ul{
+#barra ul{
     list-style: none;
     /* padding-left: 2%; */
     /* padding-left: 25%;
     width: 100%; */
     /* justify-content: space-evenly; */
 }
-.barra ul li{
+#barra ul li{
     display: inline-block;
     padding-left: 2%;
 }
-.barra ul li a{
+#barra ul li a{
     text-decoration: none;
     /* padding-left: 25%;
     padding: 2%; */
@@ -290,7 +289,7 @@ h1{
 h2{
     background-color: rgb(192, 205, 50);
     font-family: 'Montserrat', sans-serif;
-    font-size: large;
+    font-size:x-large;
     text-transform: capitalize;
     text-align: center;
     color: grey;
@@ -324,6 +323,9 @@ section{
 }
 .bici p{
     padding: 15px;
+    background-color: rgba(0, 0, 0, 0.822);
+    color: yellowgreen;
+    text-align: justify;
 }
 .item{
     border-radius: 10px;
@@ -379,6 +381,11 @@ section{
     background-size: cover;
     background-position: right;
 }
+.movimiento{
+    background-color: black;
+    color: yellowgreen;
+    font-size:x-large;
+}
 .diaDeCampoSec{
     background-image: url(./multimedia/fondo.jpg);
     background-size: cover;
@@ -423,12 +430,15 @@ section{
             "imagen texto2 texto2"; */
         /* align-items: center; */
     }
-    #imageWalkingTour{
-        padding: 2%;
-        /* padding-left: 20%; */
+    #imagenWalkingTour{
+        padding: 1%;
         min-width: 200px;
         height: auto;
         grid-area: imagen;
+    }
+    #imagenWalkingTour:hover{
+        transform: rotateY(360deg);
+        transition: all 2s;
     }
     #walkingTour-texto{
         font-size: 15px;
@@ -441,8 +451,11 @@ section{
         grid-area: texto1;
         padding: 1%;
         padding-top: 1%;
+        margin-top: 2%;
         text-align: justify;
         height: auto;
+        background-color: rgba(0, 0, 0, 0.849);
+        color: yellowgreen;
     }
     #texto2{
         grid-area: texto2;
@@ -450,6 +463,8 @@ section{
         padding-top: 1%;
         text-align: justify;
         height: auto;
+        background-color: rgba(0, 0, 0, 0.849);
+        color: yellowgreen;
     }
     #walkingTour-texto iframe{
         width: auto;
@@ -461,34 +476,34 @@ section{
     /* } */
 
 /* @media only screen and (min-width: 400px) and (max-width: 599px){ */
-    .walking{
+    /* .walking{
         width: 100%;
         height: 1500px;
         display: grid;
         grid-template-columns: 1, 1fr;
         height: auto;
-    }
-    .imageWalkingTour{
+    } */
+    /* .imageWalkingTour{
         width: 300px;
         height: auto;
-    }
-    .walkingTour-texto iframe{
+    } */
+    /* .walkingTour-texto iframe{
         background-size: cover;
         background-position: center;
         height: auto;
         width: 300px;
-    }
-    .texto1{
+    } */
+    /* .texto1{
         width: 300px;
         background-size: cover;
         background-position: center;
         justify-self:flex-en;
-    }
-    .texto2{
+    } */
+    /* .texto2{
         width: 300px;
         background-size: cover;
         background-position: center;
-    }
+    } */
     /* } */
 
 footer{
@@ -510,7 +525,7 @@ footer i{
     color: grey;
     letter-spacing: 15px;
 }
-.inicio{
+#inicio{
     color: grey;
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
@@ -518,14 +533,17 @@ footer i{
     border: 3px solid grey;
     margin-left: 1%;
 }
-.inicio:hover{
+#inicio:hover{
     color: yellowgreen;
     background-color: black;
+}
+#nosotros img{
+    padding-left: 15%;
 }
 #nosotros-img{
     width: 80%;
     height: auto;
-    padding: 10%px;
+    padding-top: 1%;
     padding-left: 15%;
 }
 #nosotros{
@@ -630,8 +648,7 @@ p{
 .reservar{
     width: 100%;
     height: auto;
-    background-color: black;
-    color: yellowgreen;
+    background-color: rgb(176, 176, 176);
     padding: 20px;
 }
 .reservar img:hover{
@@ -644,7 +661,7 @@ p{
         width: 300px;
         height: auto;
         display: none;
-        border-radius: 10%;
+        border-radius: 5%;
     }}
 #reservarBici{
     display: flex;
@@ -652,6 +669,7 @@ p{
     justify-content:space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    color: yellowgreen;
 }
 #reservarBici img{
     padding: 2%;
@@ -682,16 +700,6 @@ p{
     padding: 2%;
     min-width: 400px;
     border-radius: 10%;
-}
-#imageWalkingTourImg{
-    padding: 2%;
-    padding-left: 5%;
-    min-width: 400px;
-    border-radius: 10%;
-}
-#imageWalkingTourImg:hover{
-    transform: rotateY(360deg);
-    transition: all 2s;
 }
 #reservarBot{
     font-family: 'Montserrat', sans-serif;
