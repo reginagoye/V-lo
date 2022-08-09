@@ -109,18 +109,12 @@ h2 {
 
 h1 {
     @include titulos(rgb(192, 205, 50), 'Montserrat', xx-large);
-    // background-color: $superYellow;
-    // font-family: $superYellow;
-    // font-size: xx-large;
     text-transform: capitalize;
     color: rgb(0, 0, 0);
     padding: 15px;
 }
 h2 {
     @include titulos(rgb(192, 205, 50), 'Montserrat', x-large);
-    // background-color: $superYellow;
-    // font-family: $fontMont;
-    // font-size: x-large;
     text-transform: capitalize;
     text-align: center;
     color: grey;
@@ -128,9 +122,6 @@ h2 {
 }
 h4 {
     @include titulos(rgb(192, 205, 50), 'Montserrat', 25px);
-    // background-color: rgba(0, 0, 0, 0.726);
-    // font-family: $fontMont;
-    // font-size: 25px;
     text-transform: capitalize;
     color: $superYellow;
     padding: 15px;
@@ -145,31 +136,31 @@ section {
     color: $fontColor;
     font-size: x-large;
 }
-h1{
-    background-color: $superYellow;
-    font-family: $fontMont;
-    font-size:xx-large;
-    text-transform: capitalize;
-    color: rgb(0, 0, 0);
-    padding: 15px;
-}
-h2{
-    background-color: $superYellow;
-    font-family: $fontMont;
-    font-size:x-large;
-    text-transform: capitalize;
-    text-align: center;
-    color: grey;
-    padding: 10px;
-}
-h4{
-    background-color: rgba(0, 0, 0, 0.726);
-    font-family: $fontMont;
-    font-size:25px;
-    text-transform: capitalize;
-    color: $fontColor;
-    padding: 15px;
-}
+// h1{
+//     background-color: $superYellow;
+//     font-family: $fontMont;
+//     font-size:xx-large;
+//     text-transform: capitalize;
+//     color: rgb(0, 0, 0);
+//     padding: 15px;
+// }
+// h2{
+//     background-color: $superYellow;
+//     font-family: $fontMont;
+//     font-size:x-large;
+//     text-transform: capitalize;
+//     text-align: center;
+//     color: grey;
+//     padding: 10px;
+// }
+// h4{
+//     background-color: rgba(0, 0, 0, 0.726);
+//     font-family: $fontMont;
+//     font-size:25px;
+//     text-transform: capitalize;
+//     color: $fontColor;
+//     padding: 15px;
+// }
 section{
     background-color: $backgroundColorGrey;
     height: auto;
