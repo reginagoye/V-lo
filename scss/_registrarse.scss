@@ -1,0 +1,45 @@
+#login {
+    background-color: rgba(128, 128, 128, 0.139);
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    font-family: $fontMont;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#formu {
+    background-color: rgba(0, 0, 0, 0.568);
+    color: $fontColor;
+    padding: 2%;
+    font-family: $fontMont;
+    /* width: 300px; */
+    legend {
+        font-weight: bolder;
+        font-size: larger;
+        font-weight: bolder;
+        color: $fontColor;
+        margin-bottom: 5%;
+    }
+    select {
+        background-color: rgba(0, 0, 0, 0.128);
+        color: $fontMont;
+    }
+    input {
+        background-color: rgba(189, 187, 187, 0.087);
+        border: 2px solid yellowgreen;
+        color: $fontColor;
+        padding-bottom: 2%;
+    }
+    label {
+        background-color: rgba(189, 187, 187, 0.087);
+        color: $fontColor;
+        padding-bottom: 2%;
+    }
+    textarea {
+        background-color: rgba(201, 201, 201, 0.176);
+        color: $fontColor;
+    }
+}  

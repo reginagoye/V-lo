@@ -1,0 +1,55 @@
+.walking{
+    width: 100%;
+    height: auto;
+}
+.walkingCarousel{
+    width: $width*2.5;
+    height: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#imagenWalkingTour{
+    padding: 1%;
+    min-width: 200px;
+    height: auto;
+    grid-area: imagen;
+}
+#imagenWalkingTour:hover{
+    transform: rotateY(360deg);
+    transition: all 2s;
+}
+#walkingTour-texto{
+    font-size: 15px;
+    text-align: center;
+    p{
+        font-size: 15px;
+    }
+    iframe{
+        width: auto;
+        height: 60%;
+        grid-area: ubicacion;
+        /* padding: 1%; */
+        padding-left: 10%;
+    }
+}
+#texto1{
+    grid-area: texto1;
+    padding: 1%;
+    padding-top: 1%;
+    margin-top: 2%;
+    text-align: justify;
+    height: auto;
+    background-color: $backgroundColorBlack;
+    color: $fontColor;
+}
+#texto2{
+    @extend #texto1;
+    // grid-area: texto2;
+    // padding: 1%;
+    // padding-top: 1%;
+    // text-align: justify;
+    // height: auto;
+    // background-color: rgba(0, 0, 0, 0.849);
+    // color: $fontColor;
+}

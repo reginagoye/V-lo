@@ -1,0 +1,41 @@
+.diaDeCampoSec{
+    background-image: url(./multimedia/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#diaDeCampo{
+    
+    width: 100%;
+    height: auto;
+    /* display: inline-flex; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap-reverse; */
+    padding: 5%;
+    align-items: center;
+    justify-content: space-around;
+
+    p{
+        /* padding: 10px; */
+        text-align: justify;
+        width: 300px;
+    }
+}
+.imagenDiaDeCampo{
+    padding: 1%;
+    min-width: 200px;
+    border-radius: 15%;
+}
+.imagenDiaDeCampo:hover{
+    transform: scale(1.15);
+    transition: all 0.8s;
+}
+@for $incremento from 1 to 4 {
+    .imagenDiaDeCampo-#{$incremento} {
+        width: 200px*$incremento;
+    }
+}
+@for $in from 1 through 3 {
+    .bucle-#{$in} {
+        background-color: lighten($backgroundColorBlack, $in * 10%);
+    }
+}

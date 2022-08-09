@@ -1,0 +1,37 @@
+header{
+    height: 150px;
+    width: 100%;
+    background-color: $superYellow;
+    display: inline-block;
+
+    .logo{
+        color:black;
+        align-content: center;
+        align-items: center;
+        font-size: 40px;
+        font-family: $fontMont;
+    }
+        span{
+            color: gray;
+        }
+}
+#barra {
+    font-family: "Montserrat", sans-serif;
+    ul {
+    list-style: none;
+    }
+        li {
+    padding-left: 2%;
+        }
+
+            a {
+    text-decoration: none;
+    font-size: 25px;
+    color: gray;
+            }
+}
+#barra a:hover {
+    color: black;
+    // background-color: $backgroundColorBlack;
+}
+
