@@ -1,20 +1,15 @@
-$fontMont:'Montserrat', sans-serif;
-$fontTamanio: 25px;
-$backgroundColorBlack: black;
-$backgroundColorGrey: grey;
-$backgroundColorYellow: yellowgreen;
-$superYellow: rgb(192, 205, 50);
-$fontColor: yellowgreen;
+// $fontMont:'Montserrat', sans-serif;
+// $fontTamanio: 25px;
+// $backgroundColorBlack: black;
+// $backgroundColorGrey: grey;
+// $backgroundColorYellow: yellowgreen;
+// $superYellow: rgb(192, 205, 50);
+// $fontColor: yellowgreen;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
 @mixin titulos($background-color, $font-family, $font-size) {
     background-color: $background-color;
     font-family: $font-family;
     font-size: $font-size;
-}
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 html{
     scroll-behavior: smooth;
@@ -37,6 +32,7 @@ main{
     height: 450px;
 }
 .presentacion{
+    // background-color: rgba(128, 128, 128, 0.084);
 margin: 5px;
 padding: 2%;
         div{
@@ -49,6 +45,11 @@ padding: 2%;
 }
 .video{
 margin-top: 1%;
+}
+#verMass{
+    margin-top: 5%;
+    background-color: rgba(128, 128, 128, 0.048);
+    height: auto;
 }
 #verMas {
 height: auto;
@@ -126,21 +127,21 @@ h4 {
     color: $superYellow;
     padding: 15px;
 }
-section {
-    background-color: $backgroundColorGrey;
-    height: auto;
-    width: 100%;
-}
+// section {
+//     background-color: $backgroundColorGrey;
+//     height: auto;
+//     width: 100%;
+// }
 .movimiento {
     background-color: $backgroundColorBlack;
     color: $fontColor;
     font-size: x-large;
 }
-section{
-    background-color: $backgroundColorGrey;
-    height: auto;
-    width: 100%;
-} 
+// section{
+//     background-color: $backgroundColorGrey;
+//     height: auto;
+//     width: 100%;
+// } 
 .movimiento{
     background-color: $backgroundColorBlack;
     color: $fontColor;

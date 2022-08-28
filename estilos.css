@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap");
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -43,6 +37,12 @@ main {
 
 .video {
   margin-top: 1%;
+}
+
+#verMass {
+  margin-top: 5%;
+  background-color: rgba(128, 128, 128, 0.048);
+  height: auto;
 }
 
 #verMas {
@@ -735,6 +735,4 @@ header span {
   height: auto;
   background-color: black;
   color: yellowgreen;
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */
