@@ -22,6 +22,8 @@
 }
 .imagenDiaDeCampo{
     padding: 1%;
+    margin-left:  auto;
+    margin-right: auto;
     min-width: 200px;
     border-radius: 15%;
 }
@@ -29,9 +31,9 @@
     transform: scale(1.15);
     transition: all 0.8s;
 }
-@for $incremento from 1 to 4 {
+@for $incremento from 4 to 1 {
     .imagenDiaDeCampo-#{$incremento} {
-        width: 200px*$incremento;
+        width: 100px*$incremento;
     }
 }
 @for $in from 1 through 3 {

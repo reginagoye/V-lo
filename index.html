@@ -16,8 +16,32 @@
 <body>
     <header class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <div class="logo col-md-4">Turismo <span>Vélo</span></div>
-            <nav id="barra" class=" col-md-8">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Turismo <span>Vélo</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" href="./pages/reservar.html">Reservar</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./pages/login.html">Registrarse</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </nav>
+            <!-- <div class="logo col-md-4">Turismo <span>Vélo</span></div> -->
+            <!-- <nav id="barra" class=" col-md-8">
                 <ul class="navbar">
                     <li class="nav-item">
                         <a class="nav-link" href="./pages/reservar.html">Reservar</a>
@@ -33,7 +57,7 @@
                     </li>
                     <a id="inicio" class="nav-link" href="../index.html">Inicio</a>
                 </ul>
-            </nav>
+            </nav> -->
         </div>
     </header>
     <!-- presentacion -->
@@ -78,9 +102,7 @@
             <div class="item item5"></div>
             <div class="item item6"></div>
         </section>  
-        <marquee class="movimiento" behavior="scroll" direction="left"><em>Vélo es turismo para nosotros. | Vas a volver más libre.</em></marquee><br><hr><br>
-        <!-- <img id="imagenBici" src="./multimedia/Objeto inteligente vectorial-1.png"> -->
-        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dignissimos quaerat facilis, aspernatur quibusdam fugiat ratione voluptates quam ullam dicta facere, aperiam magni hic itaque omnis voluptatum reprehenderit alias? Expedita! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut hic officiis ducimus consectetur possimus aliquam totam vitae rerum pariatur illum earum similique a rem, consequatur natus ea suscipit minima corporis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia officiis ipsum sint, laudantium fuga impedit autem qui ad soluta ex. Dolores nam amet molestias praesentium enim, vitae et laboriosam voluptatum? lore</p><br>
+        <marquee class="movimiento" behavior="scroll" direction="left"><em>Vélo es turismo para nosotros. | Vas a volver más libre.</em></marquee>
         <a href="bici"></a>
     </section>
     <!-- fin seccion tour bici -->
@@ -105,7 +127,7 @@
             </div>
         </div>
         <div id="diaDeCampo" class="row">
-            <div class="col-sm-4 col-md-6 col-xl-4">
+            <div class="col-sm-4 col-md-6 col-xl-6">
                 <img class="imagenDiaDeCampo-3" width="300px" height="auto" src="./multimedia/dia de campo.jpg">
             </div>
             <div class="col-sm-4 col-md-6 col-xl-4">
@@ -118,13 +140,13 @@
     <h2>Walking Tour</h2>
     <a name="walkingTour"></a>
     <div class="walkingCarousel">
-        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div id="demo" class="carousel slide col-xs-2 col-sm-4 col-md-6 col-xl-12" data-bs-ride="carousel">
 
             <!-- Indicators/dots -->
             <div class="carousel-indicators">
             <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2" class="active"></button>
             </div>
         
             <!-- The slideshow/carousel -->
@@ -138,30 +160,18 @@
             <div class="carousel-item">
                 <img src="./multimedia/caminar/caminar2.jpg" alt="New York" class="d-block w-100">
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <!-- Left and right controls/icons -->
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <!--  -->
             </div>
         </div>
-        <!-- Left and right controls/icons -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
-      </div>
-    <section class=" row">
-        <div class="col-sm-4 col-md-6 col-xl-6">
-            <div id="walkingTour">
-                <img id="imagenWalkingTour" class="img-fluid rounded" width="650px" height="auto" src="./multimedia/walking tour.jpg">
-            </div>
-        </div>
-        <div class="col-sm-4 col-md-6 col-xl-6">
-            <div id="walkingTour-texto">
-                <p id="texto1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dignissimos quaerat facilis, aspernatur quibusdam fugiat ratione voluptates quam ullam dicta facere, aperiam magni hic itaque omnis voluptatum reprehenderit alias? Expedita!</p><br>
-                <iframe id="ubicacion" with="300px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26372.04080578609!2d-59.12259324591883!3d-34.28667019642124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb77ff67c54833%3A0x8a32c26f4bc7c0cb!2sCapilla%20del%20Se%C3%B1or%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1656541839276!5m2!1ses!2sar" width="450" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-                <p id="texto2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dignissimos quaerat facilis, aspernatur quibusdam fugiat ratione voluptates quam ullam dicta facere, aperiam magni hic itaque omnis voluptatum reprehenderit alias? Expedita! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem minus dolorum molestiae, ea maxime blanditiis facere incidunt? Placeat, possimus voluptatem sequi culpa dolores eligendi, odit ipsa temporibus qui ipsum aperiam.</p>
-            </div>
-        </div>
-    </section>
+    </div>
+    
     <!-- fin seccion tour a pie -->
     <footer class="footer">
         <p>todos los derechos reservados©</p>

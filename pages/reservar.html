@@ -16,23 +16,29 @@
     <title>Reservar</title>
     <header class="navbar navbar-expand-sm">
       <div class="container-fluid">
-          <div class="logo col-md-4">Turismo <span>Vélo</span></div>
-          <nav id="barra" class=" col-md-8">
-              <ul class="navbar">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">Turismo <span>Vélo</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
                   <li class="nav-item">
-                      <a class="nav-link" href="./reservar.html">Reservar</a>
+                  <a class="nav-link" href="./reservar.html">Reservar</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="./contacto.html">Contacto</a>
+                  <a class="nav-link" href="./contacto.html">Contacto</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                  <a class="nav-link" href="./nosotros.html">Nosotros</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="./login.html">Registrarse</a>
+                  <a class="nav-link" href="./login.html">Registrarse</a>
                   </li>
-                  <a id="inicio" class="nav-link" href="../index.html">Inicio</a>
               </ul>
+              </div>
+          </div>
           </nav>
       </div>
     </header>
@@ -47,44 +53,44 @@
     </section>
     <section class="reservar">
         <h2 class="bucle-1">Vélo tour</h2>
-        <article id="reservarBici" class="row">
-            <div class="col-xs-4 col-sm-6 table-responsive-sm" >
+        <article>
+            <div class="table-responsive-sm" >
+              <table class="table table-hover table-dark table-striped">
+                <!-- <caption>Statement Summary</caption> -->
+                <thead>
+                  <tr>
+                    <th scope="col">martes</th>
+                    <th scope="col">miércoles</th>
+                    <th scope="col">jueves</th>
+                    <th scope="col">viernes</th>
+                    <th scope="col">sabado</th>
+                    <th scope="col">domingo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="martes">reservar</td>
+                    <td data-label="miércoles">reservado</td>
+                    <td data-label="jueves">reservar</td>
+                    <td data-label="viernes">reservado</td>
+                    <td data-label="sabado">reservar</td>
+                    <td data-label="domingo">reservar</td>
+                  </tr>
+                  <tr>
+                    <td data-label="martes">reservar</td>
+                    <td data-label="miércoles">reservado</td>
+                    <td data-label="jueves">reservado</td>
+                    <td data-label="viernes">reservar</td>
+                    <td data-label="sabado">reservado</td>
+                    <td data-label="domingo">reservar</td>
+                  </tr>
+                </tbody>
+              </table>
                 <!-- <legend>reservar</legend> -->
                 <a name="bicii"></a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et doloremque iusto similique laborum omnis at totam ipsam ipsum voluptate pariatur sint adipisci distinctio, suscipit quisquam quae! Mollitia, nihil? Provident, labore. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis iure, pariatur esse nulla, sit repellendus perspiciatis ducimus aperiam nobis ullam sed voluptatum ratione reprehenderit et, exercitationem veniam aliquid nihil incidunt?</p>
-                <table class="table table-hover table-dark table-striped">
-                    <!-- <caption>Statement Summary</caption> -->
-                    <thead>
-                      <tr>
-                        <th scope="col">martes</th>
-                        <th scope="col">miércoles</th>
-                        <th scope="col">jueves</th>
-                        <th scope="col">viernes</th>
-                        <th scope="col">sabado</th>
-                        <th scope="col">domingo</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td data-label="martes">reservar</td>
-                        <td data-label="miércoles">reservado</td>
-                        <td data-label="jueves">reservar</td>
-                        <td data-label="viernes">reservado</td>
-                        <td data-label="sabado">reservar</td>
-                        <td data-label="domingo">reservar</td>
-                      </tr>
-                      <tr>
-                        <td data-label="martes">reservar</td>
-                        <td data-label="miércoles">reservado</td>
-                        <td data-label="jueves">reservado</td>
-                        <td data-label="viernes">reservar</td>
-                        <td data-label="sabado">reservado</td>
-                        <td data-label="domingo">reservar</td>
-                      </tr>
-                    </tbody>
-                  </table>
             </div>
-            <div class="col-xs-4 col-sm-6 img-fluid">
+            <div  id="reservarBici" class="row">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et doloremque iusto similique laborum omnis at totam ipsam ipsum voluptate pariatur sint adipisci distinctio, suscipit quisquam quae! Mollitia, nihil? Provident, labore. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis iure, pariatur esse nulla, sit repellendus perspiciatis ducimus aperiam nobis ullam sed voluptatum ratione reprehenderit et, exercitationem veniam aliquid nihil incidunt?</p>
               <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
                 <!-- Indicators/dots -->
@@ -97,13 +103,13 @@
                 <!-- The slideshow/carousel -->
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img width="auto" height="450px" src="../multimedia/bici/AdobeStock_105678336_Preview.jpeg" alt="Los Angeles" class="d-block w-100">
+                    <img width="auto" height="350px" src="../multimedia/bici/AdobeStock_105678336_Preview.jpeg" alt="Los Angeles" class="d-block w-100">
                   </div>
                   <div class="carousel-item">
-                    <img width="auto" height="450px" src="../multimedia/Cinelli-2020-photo-shooting-44-1-min-e1587119340890-920x751.jpg" alt="Chicago" class="d-block w-100">
+                    <img width="auto" height="350px" src="../multimedia/Cinelli-2020-photo-shooting-44-1-min-e1587119340890-920x751.jpg" alt="Chicago" class="d-block w-100">
                   </div>
                   <div class="carousel-item">
-                    <img width="auto" height="450px" src="../multimedia/bici/AdobeStock_169710635_Preview.jpeg" alt="New York" class="d-block w-100">
+                    <img width="auto" height="350px" src="../multimedia/bici/AdobeStock_169710635_Preview.jpeg" alt="New York" class="d-block w-100">
                   </div>
                 </div>
               
@@ -120,49 +126,49 @@
         </article>
         <a name="diaDeCampo"></a>
         <h2 class="bucle-2">Dia de Campo</h2>
-        <article id="reservarDiaDeCampo" class="row">
-            <div class="col-xs-4 col-sm-6 img-fluid">
-              <img width="auto" height="450px" src="../multimedia/diaDeCampo2.jpg" alt="">
+        <article >
+            <div id="reservarDiaDeCampo" class="row">
+              <img class="img-fluid" width="auto" height="350px" src="../multimedia/diaDeCampo2.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et doloremque iusto similique laborum omnis at totam ipsam ipsum voluptate pariatur sint adipisci distinctio, suscipit quisquam quae! Mollitia, nihil? Provident, labore. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis iure, pariatur esse nulla, sit repellendus perspiciatis ducimus aperiam nobis ullam sed voluptatum ratione reprehenderit et, exercitationem veniam aliquid nihil incidunt?</p>
             </div>
-            <div class="col-xs-4 col-sm-6 table-responsive-sm">
-                <table class="table table-hover table-dark table-striped">
-                    <!-- <caption>Statement Summary</caption> -->
-                    <thead>
-                      <tr>
-                        <th scope="col">martes</th>
-                        <th scope="col">miércoles</th>
-                        <th scope="col">jueves</th>
-                        <th scope="col">viernes</th>
-                        <th scope="col">sabado</th>
-                        <th scope="col">domingo</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td data-label="martes">reservar</td>
-                        <td data-label="miércoles">reservado</td>
-                        <td data-label="jueves">reservar</td>
-                        <td data-label="viernes">reservado</td>
-                        <td data-label="sabado">reservar</td>
-                        <td data-label="domingo">reservar</td>
-                      </tr>
-                      <tr>
-                        <td data-label="martes">reservar</td>
-                        <td data-label="miércoles">reservado</td>
-                        <td data-label="jueves">reservado</td>
-                        <td data-label="viernes">reservar</td>
-                        <td data-label="sabado">reservado</td>
-                        <td data-label="domingo">reservar</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et doloremque iusto similique laborum omnis at totam ipsam ipsum voluptate pariatur sint adipisci distinctio, suscipit quisquam quae! Mollitia, nihil? Provident, labore. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis iure, pariatur esse nulla, sit repellendus perspiciatis ducimus aperiam nobis ullam sed voluptatum ratione reprehenderit et, exercitationem veniam aliquid nihil incidunt?</p>
+            <div class="table-responsive-sm">
+              <table class="table table-hover table-dark table-striped">
+                  <!-- <caption>Statement Summary</caption> -->
+                  <thead>
+                    <tr>
+                      <th scope="col">martes</th>
+                      <th scope="col">miércoles</th>
+                      <th scope="col">jueves</th>
+                      <th scope="col">viernes</th>
+                      <th scope="col">sabado</th>
+                      <th scope="col">domingo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-label="martes">reservar</td>
+                      <td data-label="miércoles">reservado</td>
+                      <td data-label="jueves">reservar</td>
+                      <td data-label="viernes">reservado</td>
+                      <td data-label="sabado">reservar</td>
+                      <td data-label="domingo">reservar</td>
+                    </tr>
+                    <tr>
+                      <td data-label="martes">reservar</td>
+                      <td data-label="miércoles">reservado</td>
+                      <td data-label="jueves">reservado</td>
+                      <td data-label="viernes">reservar</td>
+                      <td data-label="sabado">reservado</td>
+                      <td data-label="domingo">reservar</td>
+                    </tr>
+                  </tbody>
+                </table>
             </div>
         </article>
         <h2 class="bucle-3">Walking Tour</h2>
         <a name="walkingTour"></a>
         <article id="reservarWalking" class="row">
-            <div class="col-xs-4 col-sm-6 table-responsive-sm">
+            <div class="table-responsive-sm">
                 <!-- <legend>reservar</legend> -->
                 <table class="table table-hover table-dark table-striped">
                       <tr>
@@ -195,11 +201,25 @@
                   </table>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et doloremque iusto similique laborum omnis at totam ipsam ipsum voluptate pariatur sint adipisci distinctio, suscipit quisquam quae! Mollitia, nihil? Provident, labore. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis iure, pariatur esse nulla, sit repellendus perspiciatis ducimus aperiam nobis ullam sed voluptatum ratione reprehenderit et, exercitationem veniam aliquid nihil incidunt?</p>
             </div>
-            <div class="col-xs-4 col-sm-6 img-fluid rounded">
-                <img width="auto" height="450px" src="../multimedia/caminar/caminar0.jpg" alt="">
+            <div class="col-xs-4 col-sm-4 img-fluid rounded">
+                <img width="350px" height="auto" src="../multimedia/caminar/caminar0.jpg" alt="">
             </div>
         </article>
     </section>
+    <section class=" row">
+      <!-- <div class="col-sm-4 col-md-6 col-xl-6">
+          <div id="walkingTour">
+              <img id="imagenWalkingTour" class="img-fluid rounded" width="650px" height="auto" src="./multimedia/walking tour.jpg">
+          </div>
+      </div> -->
+      <div class="col-sm-4 col-md-12 col-xl-12">
+          <div id="walkingTour-texto">
+              <p id="texto1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dignissimos quaerat facilis, aspernatur quibusdam fugiat ratione voluptates quam ullam dicta facere, aperiam magni hic itaque omnis voluptatum reprehenderit alias? Expedita!</p><br>
+              <iframe id="ubicacion" with="300px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26372.04080578609!2d-59.12259324591883!3d-34.28667019642124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb77ff67c54833%3A0x8a32c26f4bc7c0cb!2sCapilla%20del%20Se%C3%B1or%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1656541839276!5m2!1ses!2sar" width="450" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+              <p id="texto2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dignissimos quaerat facilis, aspernatur quibusdam fugiat ratione voluptates quam ullam dicta facere, aperiam magni hic itaque omnis voluptatum reprehenderit alias? Expedita! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem minus dolorum molestiae, ea maxime blanditiis facere incidunt? Placeat, possimus voluptatem sequi culpa dolores eligendi, odit ipsa temporibus qui ipsum aperiam.</p>
+          </div>
+      </div>
+  </section>
 <footer>
     <p>todos los derechos reservados©</p>
     <div class="redes">

@@ -123,3 +123,27 @@
         border: 4px solid rgb(192, 205, 50);
     };
 }
+@media only screen and (min-width: 300px) and (max-width: 599px){
+    .carousel-inner{
+        width: 400px;
+        height: auto;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 1023px){
+    .carousel-inner{
+        width: 600px;
+        height: auto;
+    }
+}
+// @media only screen and (min-width: 300px) and (max-width: 599px){
+//     .carousel-indicators{
+//         width: 400px;
+//         height: auto;
+//     }
+// }
+// @media only screen and (min-width: 600px) and (max-width: 1023px){
+//     .carousel-indicators{
+//         width: 600px;
+//         height: auto;
+//     }
+// }
